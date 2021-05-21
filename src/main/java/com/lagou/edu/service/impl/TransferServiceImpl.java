@@ -50,6 +50,7 @@ public class TransferServiceImpl implements TransferService {
             to.setMoney(to.getMoney()+money);
 
             accountDao.updateAccountByCardNo(to);
+            int i = 1/0;
             accountDao.updateAccountByCardNo(from);
 
         /*    // 提交事务
